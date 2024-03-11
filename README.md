@@ -1,4 +1,4 @@
-# COVID-19 Literature Clustering
+# COVID-19 Literature Insight: Unsupervised Clustering & Topic Analysis
 
 This project aims to cluster COVID-19 related articles using unsupervised machine learning and data mining techniques. The main objectives are:
 
