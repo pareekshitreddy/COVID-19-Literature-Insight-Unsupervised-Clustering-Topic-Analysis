@@ -26,7 +26,7 @@ The following methods and algorithms were used in this project:
 
 The results of the clustering and topic modeling are shown in the following figures and tables:
 
-![T-SNE with K-Means Labels](tsne_kmeans.png)[^10^][10]
+![T-SNE with K-Means Labels](![TSNE_kmeans](https://github.com/pareekshitreddy/COVID-19-Literature-Clustering/assets/91700444/106e04f4-7735-4769-8f98-a92775375b6f))[^10^][10]
 
 ![T-SNE with GMM Labels](tsne_gmm.png)[^11^][11]
 
