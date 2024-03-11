@@ -9,7 +9,7 @@ This project aims to cluster COVID-19 related articles using unsupervised machin
 
 ## Dataset
 
-The dataset used for this project is the [CORD-19](https://www.kaggle.com/allen-institute-for-ai/CORD-19-research-challenge) dataset, which consists of over 500,000 articles in several languages, mainly in English, containing information about COVID-19, SARS-CoV-2, and other related coronaviruses[^6^][6]. This dataset was created by the White House and a consortium of leading research groups to support the scientific and medical research communities in tackling the COVID-19 pandemic.
+The dataset used for this project is the [CORD-19](https://www.kaggle.com/allen-institute-for-ai/CORD-19-research-challenge) dataset, which consists of over 500,000 articles in several languages, mainly in English, containing information about COVID-19, SARS-CoV-2, and other related coronaviruses. This dataset was created by the White House and a consortium of leading research groups to support the scientific and medical research communities in tackling the COVID-19 pandemic.
 
 ## Methods
 
@@ -19,7 +19,7 @@ The following methods and algorithms were used in this project:
 - Principal Component Analysis (PCA) to reduce the dimensionality of the feature vectors while preserving 95% of the original variance
 - K-Means, Spectral Clustering, and Gaussian Mixture Models (GMM) to cluster the documents based on their similarity
 - t-SNE to project the high-dimensional feature vectors to a two-dimensional space for visualization
-- LDA to extract the keywords and topics from each cluster[^8^][8]
+- LDA to extract the keywords and topics from each cluster
 - Cosine similarity, Euclidean distance, and Jensen Shannon divergence to measure the similarity between documents and return the most similar ones based on a given query
 
 ## Results
