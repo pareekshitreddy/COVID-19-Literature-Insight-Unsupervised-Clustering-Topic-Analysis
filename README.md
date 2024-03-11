@@ -1,4 +1,4 @@
-# COVID-19 Literature Clustering[^4^][4]
+# COVID-19 Literature Clustering
 
 This project aims to cluster COVID-19 related articles using unsupervised machine learning and data mining techniques. The main objectives are:
 
