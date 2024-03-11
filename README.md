@@ -3,7 +3,7 @@
 This project aims to cluster COVID-19 related articles using unsupervised machine learning and data mining techniques. The main objectives are:
 
 - To group similar articles based on their content and keywords
-- To visualize the clusters in a lower-dimensional space using t-SNE[^5^][5]
+- To visualize the clusters in a lower-dimensional space using t-SNE
 - To perform topic modeling using Latent Dirichlet Allocation (LDA) to identify the main topics within each cluster
 - To implement a document suggestion system that can return similar articles based on a given query
 
@@ -18,9 +18,9 @@ The following methods and algorithms were used in this project:
 - Natural Language Processing (NLP) to parse, preprocess, and vectorize the text from each document using scispacy and Term Frequency-Inverse Document Frequency (TF-IDF)
 - Principal Component Analysis (PCA) to reduce the dimensionality of the feature vectors while preserving 95% of the original variance
 - K-Means, Spectral Clustering, and Gaussian Mixture Models (GMM) to cluster the documents based on their similarity
-- t-SNE to project the high-dimensional feature vectors to a two-dimensional space for visualization[^7^][7]
+- t-SNE to project the high-dimensional feature vectors to a two-dimensional space for visualization
 - LDA to extract the keywords and topics from each cluster[^8^][8]
-- Cosine similarity, Euclidean distance, and Jensen Shannon divergence to measure the similarity between documents and return the most similar ones based on a given query[^9^][9]
+- Cosine similarity, Euclidean distance, and Jensen Shannon divergence to measure the similarity between documents and return the most similar ones based on a given query
 
 ## Results
 
