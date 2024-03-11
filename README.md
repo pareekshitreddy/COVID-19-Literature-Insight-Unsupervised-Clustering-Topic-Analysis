@@ -1,6 +1,55 @@
-# COVID-19-Literature-Clustering
+# COVID-19 Literature Clustering[^4^][4]
 
-Given the large number of documents and the rapid spread of the CoronaVirus, it has been challenging for healthcare professionals to stay updated with the new information regarding the virus. This is where we thought clustering similar documents could be helpful. Since the problem is unsupervised as we do not have any labels for the clusters, we plan to use topic modeling and extract keywords to associate these clusters to relevant topics. Highly similar Publications will have the same label and will be plotted in the form of a cluster. Topic modeling will be used to find the keywords in the clusters. There is a need for these approaches to be applied
-and derive meaningful insights as the information about these topics is increasing rapidly, with many articles being written and published every day.
+This project aims to cluster COVID-19 related articles using unsupervised machine learning and data mining techniques. The main objectives are:
 
-The remainder of the paper is laid out as follows: The second section reviews related work done on clustering covid related articles. The background material for this paper is described in Section 3. The proposed strategy, as well as the methods and algorithms we used, is described in Section 4. Section 5 describes the results of several algorithms based on the experiments we conducted. The study is concluded in Section 6 with a discussion on future work.
+- To group similar articles based on their content and keywords
+- To visualize the clusters in a lower-dimensional space using t-SNE[^5^][5]
+- To perform topic modeling using Latent Dirichlet Allocation (LDA) to identify the main topics within each cluster
+- To implement a document suggestion system that can return similar articles based on a given query
+
+## Dataset
+
+The dataset used for this project is the [CORD-19](https://www.kaggle.com/allen-institute-for-ai/CORD-19-research-challenge) dataset, which consists of over 500,000 articles in several languages, mainly in English, containing information about COVID-19, SARS-CoV-2, and other related coronaviruses[^6^][6]. This dataset was created by the White House and a consortium of leading research groups to support the scientific and medical research communities in tackling the COVID-19 pandemic.
+
+## Methods
+
+The following methods and algorithms were used in this project:
+
+- Natural Language Processing (NLP) to parse, preprocess, and vectorize the text from each document using scispacy and Term Frequency-Inverse Document Frequency (TF-IDF)
+- Principal Component Analysis (PCA) to reduce the dimensionality of the feature vectors while preserving 95% of the original variance
+- K-Means, Spectral Clustering, and Gaussian Mixture Models (GMM) to cluster the documents based on their similarity
+- t-SNE to project the high-dimensional feature vectors to a two-dimensional space for visualization[^7^][7]
+- LDA to extract the keywords and topics from each cluster[^8^][8]
+- Cosine similarity, Euclidean distance, and Jensen Shannon divergence to measure the similarity between documents and return the most similar ones based on a given query[^9^][9]
+
+## Results
+
+The results of the clustering and topic modeling are shown in the following figures and tables:
+
+![T-SNE with K-Means Labels](tsne_kmeans.png)[^10^][10]
+
+![T-SNE with GMM Labels](tsne_gmm.png)[^11^][11]
+
+![First Word Cloud](wordcloud1.png)
+
+![Second Word Cloud](wordcloud2.png)
+
+| Metrics | K-Means | Spectral Clustering | GMM |
+|---------|---------|---------------------|-----|
+| Silhouette Score | 0.0727 | 0.1129 | 0.1484 |[^1^][1][^2^][2][^3^][3]
+| Davies Bouldin Score | 1.3607 | 1.3288 | 1.2860 |
+
+The document suggestion system can return a list of similar documents based on a given document, as shown in the following example:
+
+![Similar Documents](similar_docs.png)
+
+## Conclusion and Future Work
+
+In this project, we applied various unsupervised machine learning and data mining techniques to cluster and analyze the COVID-19 literature. We were able to group the articles into meaningful clusters and identify the main topics and keywords within each cluster. We also implemented a document suggestion system that can help researchers find relevant and similar articles based on their queries.
+
+Some possible directions for future work are:
+
+- To use Word2Vec to generate embeddings for the documents instead of TF-IDF[^12^][12]
+- To implement model-based overlapping clustering to account for the overlap between clusters
+- To explore other evaluation methods for clustering and topic modeling
+- To improve the user interface and functionality of the document suggestion system
