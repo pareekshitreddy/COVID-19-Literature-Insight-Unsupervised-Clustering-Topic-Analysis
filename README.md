@@ -26,22 +26,19 @@ The following methods and algorithms were used in this project:
 
 The results of the clustering and topic modeling are shown in the following figures and tables:
 
-![TSNE_kmeans](https://github.com/pareekshitreddy/COVID-19-Literature-Clustering/assets/91700444/106e04f4-7735-4769-8f98-a92775375b6f)
+![T-SNE with Kmeans Labels]([TSNE_kmeans](https://github.com/pareekshitreddy/COVID-19-Literature-Clustering/assets/91700444/106e04f4-7735-4769-8f98-a92775375b6f))
 
-![T-SNE with GMM Labels]([tsne_gmm.png](https://github.com/pareekshitreddy/COVID-19-Literature-Clustering/assets/91700444/bfb14f9e-5c8d-4536-9177-712130c7dfa1)
+![T-SNE with GMM Labels]([tsne_gmm.png](https://github.com/pareekshitreddy/COVID-19-Literature-Clustering/assets/91700444/bfb14f9e-5c8d-4536-9177-712130c7dfa1))
 
-![First Word Cloud]([wordcloud1.png](https://github.com/pareekshitreddy/COVID-19-Literature-Clustering/assets/91700444/9abec0a3-b2ed-442c-9af1-b92a97554d9c)
+![First Word Cloud]([wordcloud1.png](https://github.com/pareekshitreddy/COVID-19-Literature-Clustering/assets/91700444/9abec0a3-b2ed-442c-9af1-b92a97554d9c))
 
-![Second Word Cloud]([wordcloud2.png](https://github.com/pareekshitreddy/COVID-19-Literature-Clustering/assets/91700444/6a7265da-1677-4fc7-bf92-d3f301544aeb)
+![Second Word Cloud]([wordcloud2.png](https://github.com/pareekshitreddy/COVID-19-Literature-Clustering/assets/91700444/6a7265da-1677-4fc7-bf92-d3f301544aeb))
 
 | Metrics | K-Means | Spectral Clustering | GMM |
 |---------|---------|---------------------|-----|
 | Silhouette Score | 0.0727 | 0.1129 | 0.1484 |[^1^][1][^2^][2][^3^][3]
 | Davies Bouldin Score | 1.3607 | 1.3288 | 1.2860 |
 
-The document suggestion system can return a list of similar documents based on a given document, as shown in the following example:
-
-![Similar Documents](similar_docs.png)
 
 ## Conclusion and Future Work
 
